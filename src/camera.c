@@ -52,10 +52,14 @@ void Camera_moveback( Camera* c ){
 
 void Camera_rotateleft( Camera* c ){
   c->a += 0.1;
+  if( c->a >= 2 * M_PI )
+    c->a = 0.f;
 } 
 
 void Camera_rotateright( Camera* c ){
   c->a -= 0.1;
+  if( c->a <= 0 )
+    c->a = 2 * M_PI;
 } 
 
 void Camera_moveup( Camera* c ){

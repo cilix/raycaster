@@ -158,9 +158,9 @@ void World_render( Camera* c, Window* w ){
   /* temporary - make sure camera doesn't go underground (for walking) */
   ch = (float)terrain[cz * MAP_WIDTH + cx];
   if( ch < WATER_LEVEL ){
-    c->y = WATER_LEVEL + 4.f;
+    c->y = WATER_LEVEL + 8.f;
   } else {
-    c->y = ch + 4.f;
+    c->y = ch + 8.f;
   }
 
   i = cx - halfWidth;

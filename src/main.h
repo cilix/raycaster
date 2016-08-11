@@ -1,8 +1,8 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-#define SCREEN_WIDTH 960
-#define SCREEN_HEIGHT 540
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 450
 
 #define SCREEN_AR (SCREEN_HEIGHT / SCREEN_WIDTH)
 
